@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+
+
+.brand-logo{
+  font-family: 'Grand Hotel', cursive;
+  letter-spacing: 2px;
+  font-weight: 900;
+
+}
+
+.Login-card{
+  width: 70%;
+  /* max-width: 1000px; */
+  height: 100vh;
+  /* border: 2px solid black; */
+  margin: 50px auto;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+.img-con{
+  width: 45%;
+  height: 100%;
+  /* border: 2px solid red; */
+  background: url('/public/Images/img3.jpg');
+  background-size:cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.login-con{
+  width: 55%;
+  height: 100%;
+  /* border: 2px solid green; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color:darksalmon;
+  padding:0 10px;
+}
+
+.lebel{
+  font-size: 28px;
+  color:#880e4f;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 50px;
+  
+}
+
+.login-con input{
+  background-color: rgb(230, 234, 240) !important;
+  border-radius: 10px !important;
+  width: 95% !important;
+  padding-left:10px !important ;
+
+}
+
+
+
+.login-con button{
+  width: 60%;
+  height: 40px;
+  margin: auto;
+}
+.login-con h3{
+  align-self: center;
+  font-weight: 900;
+
+}
+
+
+@media screen and (max-width:650px){
+  .img-con{
+    display: none;
+  }  
+  .Login-card{
+    justify-content: center;
+    width: 80%;
+  }
+  .login-con{
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.item{
+  width:30%;
+  margin-bottom: 20px;
+}
+
+
+
+.post-card2{
+  max-width: 600px !important;
+  margin: 100px auto;
+  padding: 50px;
+  background-color:rgba(5, 39, 95, 0.355) !important;
+  box-shadow: 10px 10px 20px rgba(237, 237, 233, 0.241),
+              -10px -10px 20px rgba(237, 237, 233, 0.241);
+
+}
+
+.post-card2 h4{
+  text-align: center;
+  text-transform: uppercase;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.post-card2 button{
+  width: 100%;
+  margin:  10px auto;
+}
+.post-card2 button:hover{
+  background-color: #C850C0;
+}
+
+
+#toast-container{
+  top:70px !important;
+  right: 20px !important;
+  left: auto !important;
+
+}
+
+.profile-item{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 10px;
+  background-color:rgb(148, 171, 192);
+}
+
+.profile-pic{
+
+  /* style= {{width:"200px",height:"200px",borderRadius:"50%",objectFit:"scale-down",background:"gray",borderWidth:"4px",borderStyle:"solid",borderImage:"linear-gradient(to right, darkblue, darkorchid)"}}src={state?state.pic:"Loading...." */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: scale-down;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+  
+
+}
+
+.collection-item{
+  width:100%
+}
+

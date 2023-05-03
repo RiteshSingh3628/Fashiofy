@@ -1,0 +1,120 @@
+.card{
+    /* border: 2px solid black; */
+    width: 95vw;
+    height: max-content;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color:ghostwhite;
+    box-shadow: 2px 2px 1rem rgba(0,0,0,.15);
+    border-radius: 10px;
+    
+}
+
+
+.img-card{
+    width: 30%;
+    /* height: 200px; */
+    /* border: 2px solid red; */
+    margin: 10px;
+    border-radius:10px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+
+.img-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.section2{
+    /* border: 2px solid black; */
+    width: 60%;
+    /* height: max-; */
+    /* margin: 10px 10px; */
+    display: flex;
+    flex-direction: column;
+
+}
+.title-card{
+    width: 95%;
+    margin: 5px;
+    /* border: 2px solid blue; */
+    height: fit-content;
+   padding: 5px;
+   text-align: center;
+   transition: all .2s ease;
+
+}
+.title-card a{
+    
+    margin: 5px;
+    height: fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black ;
+
+}
+.title-card a:hover{
+    color: blueviolet;
+}
+.source-card{
+    width: 95%;
+    margin: 5px;
+    /* border: 2px solid blue; */
+    /* height: 20px; */
+    display: flex;
+
+}
+.date-card{
+    /* width: 30%; */
+    margin: 5px;
+    /* border: 2px solid green; */
+    height: max-content;
+    font-size: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color:black ;
+    padding: 5px;
+}
+.author-card{
+    /* width: 70%; */
+    margin: 5px;
+    /* border: 2px solid green; */
+    height: max-content;
+    overflow:hidden ;
+    font-size: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black ;
+    text-align: center;
+    padding: 5px;
+}
+.content-card{
+    width: 95%;
+    margin: 5px;
+    /* border: 2px solid rgb(19, 1, 35); */
+    height: 100%;
+    padding: 10px 5px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .card{
+        flex-direction: column;
+    }
+    .img-card{
+        width: 90%;
+    }
+    .section2{
+        width: 100%;
+    }
+    .title-card{
+        width: 90%;
+        text-align:justify ;
+    }
+    .content-card{
+        width: 95%;
+        text-align:justify;
+    }
+}
