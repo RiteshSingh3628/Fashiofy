@@ -10,6 +10,7 @@ const {MONGOURI} = require('./config/keys')
 
 
 
+
 // establishing connection with database
 mongoose.connect(MONGOURI).then(()=>{
     console.log("connection successful.......");
@@ -36,16 +37,16 @@ app.use(require('./routes/user'))
 app.use(require('./routes/blog'))
 
 
-// if we are running on the production side these condition will be applied
-if(process.env.NODE_ENV == "production"){
-    // serving the static file
-    app.use(express.static('clients/build'))
-    const path = require('path')
-    // if the clent is requesting any file we will send these below files
-    app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'clients','build','index.html'))
-    })
-}
+// // if we are running on the production side these condition will be applied
+// if(process.env.NODE_ENV == "production"){
+//     // serving the static file
+//     app.use(express.static('clients/build'))
+//     const path = require('path')
+//     // if the clent is requesting any file we will send these below files
+//     app.get("*",(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,'clients','build','index.html'))
+//     })
+// }
 
 
 app.listen(PORT,()=>{
